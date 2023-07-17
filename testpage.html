@@ -1,0 +1,307 @@
+<html>
+<head>
+<title>Please Hire Me</title>
+
+</head>
+<meta charset="utf-8">
+<style>
+    body{background-color: rgb(255, 255, 255);
+    overflow: scroll;
+   margin: 0%;
+    }
+
+
+
+    #top-bar{
+    position: relative;
+    top:0%;
+    left: 0%;
+    z-index: 2;
+    height: 4em;
+    width:100%;
+    }
+
+
+    #bar-box-1{
+    height: 100%;
+    font-size: 3em;
+    z-index: 3;
+    float: left;
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);}
+
+    #bar-box-1:hover{background-color: rgb(69, 69, 69);}
+
+
+    #bar-box-2{
+    height: 100%;
+    font-size: 3em;
+    z-index: 3;
+    float: left;
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);}
+    #bar-box-2:hover{background-color: rgb(69, 69, 69);}
+    
+    #bar-box-3{
+    height: 100%;
+    font-size: 3em;
+    z-index: 3;
+    float: left;
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);}
+    #bar-box-3:hover{background-color: rgb(69, 69, 69);}
+
+    #main-header {font-family: 'Courier New', Courier, monospace; text-align: center; margin: 0%;}
+
+    #butt1 {position: relative; left: 40%; width: 20%; background-color: white;}
+    #primary-link{color: rgb(151, 22, 215); text-align: center;}
+
+    #primary-div{ 
+    z-index:1;   
+    position: relative;
+    margin-left:15%;
+    margin-right: 15%;
+    background-color: rgb(129, 129, 129);
+    top: 0em;}
+    .primary-para{font-size: 2em;}
+    
+
+
+    
+
+</style>
+<body>
+<div id="top-bar">
+   <a id="bar-box-1" href="https://youtube.com">Youtube</a>
+   <a id="bar-box-2" href="/https://github.com/c-davisson">GitHub</a>
+   <a id="bar-box-3" href="/https://github.com/c-davisson">Placeholder</a>
+</div>
+
+
+
+<div id="primary-div">
+
+
+<h1 id="main-header">
+Christopher Davisson
+</h1>
+
+<button type="button" id="butt1">Wait, who's getting a job?</button>
+<p class="primary-para">
+<a id="primary-link" href="http://youtube.com"></a>
+<br>
+Howdy, howdy, my name is Christopher Davisson. I'm a <br>
+
+
+</p>
+
+
+<button type="button" id="butt2">Solar Beam</button>
+<button type="button" id="butt3">Hydro Pump</button>
+<button type="button" id="butt4">Fire Blast</button>
+<button type="button" id="butt5">Fire Fang</button>
+  
+<input id="HTMLpkmnName" type="text" Placeholder="Pokemon Nickname?"/>
+<input id="HTMLpkmnHP" type="number" Placeholder="Pokemon HP?"/>
+<input id="HTMLpkmnSpd" type="number" Placeholder="Pokemon Speed?"/>
+<input id="HTMLpkmnSpec" type="number" Placeholder="Pokemon Special?"/>
+<input id="HTMLpkmnAtk" type="number" Placeholder="Pokemon Attack?"/>
+<input id="HTMLpkmnDef" type="number" Placeholder="Pokemon Defense?"/>
+<select id="HTMLpkmnM1" name="pkmnMove1" size="4"><option value="hydroPump"> Hydro Pump</option><option value="solarBeam"> Solar Beam</option><option value="fireBlast"> Fire Blast</option><option value="fireFang"> Fire Fang</option> </select>
+<select id="HTMLpkmnM2" name="pkmnMove2" size="4"><option value="hydroPump"> Hydro Pump</option><option value="solarBeam"> Solar Beam</option><option value="fireBlast"> Fire Blast</option><option value="fireFang"> Fire Fang</option> </select>
+<select id="HTMLpkmnM3" name="pkmnMove3" size="4"><option value="hydroPump"> Hydro Pump</option><option value="solarBeam"> Solar Beam</option><option value="fireBlast"> Fire Blast</option><option value="fireFang"> Fire Fang</option> </select>
+<select id="HTMLpkmnM4" name="pkmnMove4" size="4"><option value="hydroPump"> Hydro Pump</option><option value="solarBeam"> Solar Beam</option><option value="fireBlast"> Fire Blast</option><option value="fireFang"> Fire Fang</option> </select>
+
+<select id="HTMLpkmnT1" name="pkmnType1" size="4"><option value="waterType"> Water</option><option value="grassType"> Grass</option><option value="fireType"> Fire</option><option value="typenull"> None</option> </select>
+<select id="HTMLpkmnT2" name="pkmnType2" size="4"><option value="waterType"> Water</option><option value="grassType"> Grass</option><option value="fireType"> Fire</option><option value="typenull"> None</option> </select>
+
+<button id="HTMLpkmnGenerate" type="button" id="butt6">Generate New Pokemon</button>
+
+
+<select id="selectPkmn1" name="pkmn1" size="2"><option value="0">Blastiose</option><option value="1">Charizard</option></select>
+<select id="selectPkmn2" name="pkmn2" size="2"><option value="0">Blastiose</option><option value="1">Charizard</option></select>
+
+<button id="StartBattle" type="button" id="butt7">Start Battle</button>
+<button type="button" id="butt8"></button>
+</div>
+
+
+
+<script>
+/* Set up a button that shows a guy pointing at himself when clicked. */
+var testEl = document.getElementById("primary-link");
+
+var beenClicked=false;
+
+var buttEl= document.getElementById("butt1");
+
+var buttClick = function() {
+    if (beenClicked === false){
+    testEl.innerHTML= '<image src="https://c8.alamy.com/comp/B70G4W/average-forty-year-old-guy-pointing-to-himself-with-a-questioning-B70G4W.jpg" alt="puupy" style="width: 100%;">';
+    beenClicked=true;}
+    else{testEl.innerHTML=''; beenClicked=false;};
+};
+
+buttEl.addEventListener("click", buttClick);
+
+/* Sets up type funtions and moves. Types have a value for their damage multiplier when hit by other types, and functions to return the damage multiplier for the passed type and to check if they should award Same Type Attack Bonus.  */
+var type = function(name, fire, water, grass, typenull)
+{   this.name = name;
+    this.fire=fire;
+    this.water=water;
+    this.grass=grass;
+    this.typenull=typenull;
+};
+
+type.prototype.returnMatch = function(type2) {
+    return(this[type2]);
+};
+
+type.prototype.STAB=function(move){
+    if (this.name===move.type.name)
+        {return(1.5);}
+    else {return(1);};
+};
+
+var fireType= new type ("fire", .5, 2, .5, 1);
+var grassType= new type ("grass", 2, .5, .5, 1);
+var waterType= new type ("water", .5, .5, 2, 1);
+var typenull= new type ("typenull", 1, 1, 1, 1);
+
+var move = function(type, basePower, physical){
+    this.type=type;
+    this.basePower=basePower;
+    this.physical=physical;
+};
+
+
+var hydroPump = new move(waterType, 120, false);
+var solarBeam = new move(grassType, 120, false);
+var fireBlast = new move(fireType, 120, false);
+var fireFang = new move(fireType, 100, true);
+
+/* Stores information on pokemon used by the battle functions. */
+var Pokemon = [
+    {hp: 100,  spec: 80, spd:60, atk: 80, def: 120, m1: fireBlast, m2: hydroPump, m3: fireEl, m4: solarBeam, t1: waterType, t2: typenull, nick: "Blastoise"},
+    {hp: 100,  spec: 90, spd: 80, atk: 90, def: 80, m1: fireBlast, m2: fireFang, m3: hydroPump, m: solarBeam, t1: fireType, t2: typenull, nick:"Charizard"},
+
+ ];
+
+var pkmnSelect1= document.getElementById("selectPkmn1");
+var pkmnSelect2= document.getElementById("selectPkmn2");
+
+var pkmn1= Pokemon[0];
+var pkmn2= Pokemon[1];
+
+/* Function that frames a Pokemon battle. */
+
+var battle = function(){};
+battle.prototype.begin = function(){
+
+   pkmn1=Pokemon[pkmnSelect1.value];
+   pkmn2=Pokemon[pkmnSelect2.value];
+
+    p1hp=Pokemon[pkmnSelect1.value].hp;
+    p2hp=Pokemon[pkmnSelect2.value].hp;
+
+    if (pkmn1.spd>pkmn2.spd){
+        activePKMN=pkmn1;
+        nonActPKMN=pkmn2;
+    } else {
+        activePKMN=pkmn2;
+        nonActPKMN=pkmn1;
+    }
+};
+
+battle.prototype.turn = function(move){      
+    if (move.physical===true){console.log(activePKMN.spec);
+        var hpPointer=Math.round((activePKMN.atk*move.basePower/10)/(nonActPKMN.def/5)*(nonActPKMN.t1.returnMatch([move.type.name]))*(nonActPKMN.t2.returnMatch([move.type.name]))*(activePKMN.t1.STAB(move))*(activePKMN.t2.STAB(move)));
+    } else{
+        var hpPointer=Math.round((activePKMN.spec*move.basePower/10)/(nonActPKMN.spec/5)*(nonActPKMN.t1.returnMatch([move.type.name]))*(nonActPKMN.t2.returnMatch([move.type.name]))*(activePKMN.t1.STAB(move))*(activePKMN.t2.STAB(move)));
+    };
+
+    if (activePKMN==pkmn1) {p2hp-=hpPointer; console.log(p2hp);} else {p1hp-=hpPointer; console.log(p1hp);};
+
+    
+    console.log(activePKMN, activePKMN.nick);
+    if (activePKMN===pkmn2){
+        activePKMN=pkmn1;
+        nonActPKMN=pkmn2;
+    } else {
+        activePKMN=pkmn2;
+        nonActPKMN=pkmn1;
+    };
+
+    if (this.p1hp<=0){console.log(pkmn2.nick+" fainted! Game over.")}
+    else if (this.p2hp<=0){console.log(pkmn1.nick+" fainted! Game over.")}
+    else {
+    console.log(activePKMN.nick + ", it's your turn!" );};
+};
+
+var runBattle = new battle();
+
+/* Script that governs button/input behaviour. */
+
+var grassEl= document.getElementById("butt2");
+var grassClick = function() {runBattle.turn(solarBeam);};
+var waterEl= document.getElementById("butt3");
+var waterClick = function() {runBattle.turn(hydroPump);};
+var fireEl= document.getElementById("butt4");
+var fireClick = function() {runBattle.turn(fireBlast);};
+var ffEl= document.getElementById("butt5");
+var ffClick = function() {runBattle.turn(fireFang);};
+
+
+grassEl.addEventListener("click", grassClick);
+waterEl.addEventListener("click", waterClick);
+fireEl.addEventListener("click", fireClick);
+
+var newNick= document.getElementById("HTMLpkmnName");
+var  newHP= document.getElementById("HTMLpkmnHP");
+var  newSpd= document.getElementById("HTMLpkmnSpd");
+var  newSpec= document.getElementById("HTMLpkmnSpec");
+var  newAtk= document.getElementById("HTMLpkmnAtk");
+var  newDef= document.getElementById("HTMLpkmnDef");
+var  newM1= document.getElementById("HTMLpkmnM1");
+var  newM2= document.getElementById("HTMLpkmnM2");
+var  newM3= document.getElementById("HTMLpkmnM3");
+var  newM4= document.getElementById("HTMLpkmnM4");
+var  newT1= document.getElementById("HTMLpkmnT1");
+var  newT2= document.getElementById("HTMLpkmnT2");
+var genButt= document.getElementById("HTMLpkmnGenerate");
+var pkmnSelect1= document.getElementById("selectPkmn1");
+var pkmnSelect2= document.getElementById("selectPkmn2");
+var startBatt= document.getElementById("StartBattle");
+
+
+var genClick=function(){
+    var newmon ={hp: eval(newHP.value), spd: eval(newSpd.value), spec: eval(newSpec.value), atk: eval(newAtk.value), def: eval(newDef.value), m1: eval(newM1.value), m2: eval(newM2.value), m3: eval(newM3.value), m4: eval(newM4.value), t1: eval(newT1.value), t2: eval(newT2.value), nick: newNick.value};
+    Pokemon.push(newmon);
+    console.log(Pokemon);
+    pkmnSelect1.size++;
+    pkmnSelect1.innerHTML+= '<option value="'+(Pokemon.length-1)+'">'+newNick.value+'</option>';
+    pkmnSelect2.size++;
+    pkmnSelect2.innerHTML+= '<option value="'+(Pokemon.length-1)+'">'+newNick.value+'</option>';
+};
+
+genButt.addEventListener("click", genClick);
+startBatt.addEventListener("click", runBattle.begin)
+
+</script>
+</body>
+</html>
