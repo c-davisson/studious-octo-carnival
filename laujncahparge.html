@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<header  id="output"></header>
+
+
+<script src="fizzBuzz.js"></script>
+<script>
+   var output=document.getElementById("output");
+   console.log(fizzBuzz(1));
+   
+   for (var i = 1; i < 101; i++){
+    output.innerHTML+='<p>'+fizzBuzz(i)+'</p>';
+    };
+
+</script>
+</body>
+</html>
